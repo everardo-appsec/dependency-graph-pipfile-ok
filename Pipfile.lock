@@ -1,0 +1,35 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "e3b0c44298fc1c149afb5f4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.11"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://art.example.org/artifactory/api/pypi/pypi-virtual/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "gunicorn": {
+            "version": "==20.1.0",
+            "hashes": [
+                "sha256:b1f2f9a7d9dfb02a6b60e4ae08f136c4e2b9f7a1e4620f51b0fdf0b47deaf7cc",
+                "sha256:fa5eb73dbad881b36b4146d1d0800c9b9977765049c2a92584b0c1b20fb78837"
+            ]
+        },
+        "requests": {
+            "version": "==2.28.1",
+            "hashes": [
+                "sha256:7cfd38dfdb82b85dd6ba13252c16e2c4332ed7ad8da7f845b8f48ad4b0a94f3f",
+                "sha256:47f16a6a9d8c36e1c7b748db91fa45a0f43b4a56d5da505a44cdadf8e6557150"
+            ]
+        }
+    },
+    "develop": {}
+}
