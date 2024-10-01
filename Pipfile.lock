@@ -10,7 +10,12 @@
         "sources": [
             {
                 "name": "pypi",
-                "url": "https://art.example.org/artifactory/api/pypi/pypi-virtual/simple",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            },
+            {
+                "name": "private-registry",
+                "url": "https://art.example.org/artifactory/api/pypi/private-repo/simple",
                 "verify_ssl": true
             }
         ]
@@ -18,6 +23,7 @@
     "default": {
         "gunicorn": {
             "version": "==20.1.0",
+            "index": "private-registry",
             "hashes": [
                 "sha256:b1f2f9a7d9dfb02a6b60e4ae08f136c4e2b9f7a1e4620f51b0fdf0b47deaf7cc",
                 "sha256:fa5eb73dbad881b36b4146d1d0800c9b9977765049c2a92584b0c1b20fb78837"
